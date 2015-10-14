@@ -8,8 +8,11 @@ block head
 	//- if u dont set this vars, they will have default values
 
 block content
-	h1.walle_welcome Hello my friend. Wall-e greetings you.
 
 block additionalCSS
 
 block scripts
+	// build:js scripts/app.min.js async
+	script(src='js/libs/jquery-2.1.4.min.js')
+	script(src='' + configs.js)
+	// endbuild
