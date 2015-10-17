@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html>
+	<html manifest="assets/cache.manifest"></html>
 	<head>
 		
 		<meta charset="utf-8">
@@ -15,13 +16,13 @@
 		<meta property="og:site_name" content="Open Graph SiteName">
 		<script>
 			function loadFont(t,e,n){function a(){if(!window.FontFace)return!1;var t=new FontFace("t",'url("data:application/font-woff2,") format("woff2")',{});return t.load(),"loading"===t.status}var o=navigator.userAgent,r=!window.addEventListener||o.match(/(Android (2|3|4.0|4.1|4.2|4.3))|(Opera (Mini|Mobi))/)&&!o.match(/Chrome/);if(!r){var i={};try{i=localStorage||{}}catch(s){}var d="x-font-"+t,c=d+"url",l=d+"css",u=i[c],f=i[l],p=document.createElement("style");if(p.rel="stylesheet",document.head.appendChild(p),!f||u!==e&&u!==n){var w=n&&a()?n:e,h=new XMLHttpRequest;h.open("GET",w),h.onload=function(){h.status>=200&&h.status<400&&(i[c]=w,i[l]=p.textContent=h.responseText)},h.send()}else p.textContent=f}}
-			loadFont('cachedFonts', 'assets/fontWoffs.css', 'assets/fontsWoff2.css');
+			loadFont('cachedFonts', 'assets/fontsWoff.css', 'assets/fontsWoff2.css');
 		</script>
 	</head>
 	<body>
 		<header role="banner" class="header">
 			<div class="header_content">
-				<h1 class="header_title"> <strong class="header_title_main">«Литературные дегустации»</strong>в лучших ресторанах Москвы 2-31 октября</h1><img alt="Городской фестиваль русской кухни" width="404" height="302" src="img/logo.png">
+				<h1 class="header_title"> <strong class="header_title_main">«Литературные дегустации»</strong>в лучших ресторанах Москвы 2-31 октября</h1><img alt="Городской фестиваль русской кухни" width="404" height="302" src="img/logo.png" class="header_logo">
 			</div>
 		</header>
 		<section role="main" class="content">
@@ -47,9 +48,8 @@
 					<p class="about_count_text">известных <br> русских литературных произведений</p>
 				</section>
 			</div>
-			<h2 class="about_title">Партнеры церемонии открытия:
-				<div class="about_partners"><img src="img/partner1.png" alt="Серябь" width="109" height="62" class="about_partners_img"><img src="img/partner2.png" alt="Золотая балка" width="228" height="43" class="about_partners_img"></div>
-			</h2>
+			<h2 class="about_title">Партнеры церемонии открытия:</h2>
+			<div class="about_partners"><img src="img/partner1.png" alt="Серябь" width="109" height="62" class="about_partners_img"><img src="img/partner2.png" alt="Золотая балка" width="228" height="43" class="about_partners_img"></div>
 		</section>
 		<section class="gallery">
 			<div class="gallery_wrapper">

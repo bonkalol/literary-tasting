@@ -6,7 +6,7 @@ CACHE:
 # place your cache here
 # or uncomment lines down below
 # ../css/app.css
-# ../js/app.js
+# ../js/app.min.js
 
 NETWORK:
 *

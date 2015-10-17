@@ -27,4 +27,8 @@
 	&_title_main {
 		display: block;
 	}
+
+	&_logo {
+		flex-shrink: 0;
+	}
 }
