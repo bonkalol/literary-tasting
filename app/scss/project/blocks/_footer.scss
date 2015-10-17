@@ -1,0 +1,18 @@
+
+.copyright {
+	height: 70px;
+	@include webp('../img/', 'footer', '.png');
+	background-position: left center;
+	background-repeat: no-repeat;
+	background-color: #080808;
+
+
+	&_text {
+		@extend %wrapper;
+		text-align: right;
+		height: 100%;
+		line-height: 70px;
+		font-size: 14px;
+		color: #fff;
+	}
+}

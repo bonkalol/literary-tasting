@@ -1,2 +1,1 @@
-"use strict";
-//# sourceMappingURL=/maps/app.js.map
+!function(){new Blazy({breakpoints:[{width:420,src:"data-src-small"}],success:function(a){setTimeout(function(){var s=a.parentNode;s.className=s.className.replace(/\bloading\b/,"")},200)}})}();

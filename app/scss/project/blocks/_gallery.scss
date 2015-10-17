@@ -1,0 +1,48 @@
+.gallery {
+	padding: 60px 0 110px;
+	background-color: #f4f4f2;
+
+	&_wrapper {
+		@extend %wrapper;
+	}
+
+	&_title {
+		font-family: $GothamBlack;
+		color: #d3404c;
+		font-size: 32px;
+		padding-bottom: 30px;
+		text-transform: uppercase;
+	}
+
+	&_container {
+		@include clearfix();
+	}
+
+	&_item {
+		margin-right: 20px;
+		float: left;
+		margin-bottom: 17px;
+		box-shadow: 0 2px 2px 0 rgba(0,0,0,.14),0 3px 1px -2px rgba(0,0,0,.2),0 1px 5px 0 rgba(0,0,0,.12);
+		cursor: pointer;
+		transition: box-shadow .4s;
+		will-change: box-shadow;
+		transform: translateZ(0);
+		background: url(../img/loading.gif) no-repeat;
+		background-position: center center;
+
+		&:nth-child(3n) {
+			margin-right: 0;
+		}
+
+		&:hover,
+		&:focus {
+			box-shadow: 0 6px 10px 0 rgba(0,0,0,.14),0 1px 18px 0 rgba(0,0,0,.12),0 3px 5px -1px rgba(0,0,0,.2);
+		}
+	}
+
+	&_image {
+		display: block;
+		@include size(300px, 340px);
+		background-size: cover;
+	}
+}

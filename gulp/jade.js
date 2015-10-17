@@ -22,7 +22,7 @@ gulp.task('jade', function() {
 
 	return gulp.src(paths.srcPaths.jade)
 		.pipe(plumber({errorHandler: log}))
-		.pipe(jade())
+		.pipe(jade({pretty: '\t'}))
 		.pipe(notify('File changed: dev/jade/<%= file.relative %>! Starting Jade.'))
 		.pipe(duration('Finished jade task in'))
 		.pipe(configs.htmlValidator ? htmlvalidator({doctype: 'HTML5', charset: 'utf-8'}) : gutil.noop())

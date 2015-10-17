@@ -1,0 +1,56 @@
+
+.about {
+	@extend %wrapper;
+	padding-top: 70px;
+
+	&_title {
+		width: 500px;
+		color: #d3404c;
+		line-height: 21px;
+		font-size: 18px;
+		font-weight: 700;
+		padding-bottom: 35px;
+	}
+
+	&_desc {
+		@include clearfix();
+		padding-bottom: 54px;
+	}
+
+	&_count {
+		float: left;
+		width: 350px;
+		display: flex;
+		align-items: center;
+
+		&:nth-child(2) .about_count_text {
+			width: 240px;
+		}
+	}
+
+	&_count_value {
+		width: 95px;
+		font-size: 57px;
+		font-weight: 700;
+	}
+
+	&_count_text {
+		font-size: 14px;
+		line-height: 21px;
+		width: 200px;
+	}
+
+	&_partners {
+		padding-top: 40px;
+		display: flex;
+		align-items: center;
+	}
+
+	&_partners_img {
+		margin-right: 110px;
+
+		&:last-child {
+			margin-right: 0;
+		}
+	}
+}
